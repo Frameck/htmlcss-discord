@@ -1,5 +1,186 @@
+:root {
+    --content-size: 920px;
+    --col-size: calc(var(--content-size) / 6)
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    color: white;
+    margin-bottom: 100px;
+}
+
+header nav {
+    padding: 10px 0;
+}
+
+header nav ul {
+    display: inline-block;
+    list-style: none;
+}
+
+header nav ul li {
+    text-decoration: none;
+    float: left;
+}
+
+header nav ul li a {
+    padding: 20px;
+}
+
+header section > .btn-white {
+    margin-right: 15px;
+}
+
+.container {
+    max-width: var(--content-size);
+    width: 100%;
+    margin: 150px auto;
+    padding: 75px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header section {
+    text-align: center;
+    padding: 100px 150px 120px 150px;
+}
+
+header section h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+header section p {
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+
+main section:nth-child(even) {
+    background-color: rgb(240, 235, 235);
+}
+
+.row img {
+    width: 80%;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.row .col-2x {
+    margin-top: 25px;
+}
+
+.float-right img {
+    display: block;
+    margin-left: auto;
+}
+
+.section-4-text {
+    text-align: center;
+}
+
+.section-4-text p {
+    width: 90%;
+    margin: auto;
+}
+
+.section-4-bottom-text {
+    text-align: center;
+}
+
+.section-4-bottom-text h3 {
+    margin-bottom: 30px;
+}
+
+.section-4 {
+    margin-bottom: 75px;
+    position: relative;
+}
+
+.section-4-img img {
+    margin: auto;
+    display: inherit;
+    margin-bottom: 50px;
+}
+
+.section-4-bottom-text img {
+    position: absolute;
+    bottom: 170px;
+    left: 200px;
+    width: 50%;
+}
+
+
+/***** utility classes *****/
+
+.row > * {
+    float: left;
+}
+  
+.row > .float-right {
+    float: right;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1x {
+    width: calc(var(--col-size) * 1);
+}
+
+.col-2x {
+    width: calc(var(--col-size) * 2);
+}
+
+.col-4x {
+    width: calc(var(--col-size) * 4);
+}
+
+.btn {
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-black {
+    color: white;
+    background-color: rgb(41, 43, 48);
+}
+
+.btn-light-purple {
+    color: white;
+    background-color: rgb(147, 160, 221);
+}
+
+.btn-white {
+    background-color: white;
+}
+
+.btn-white a {
+    color: rgb(41, 43, 48);
+}
+
+.btn-small {
+    font-size: 14px;
+    padding: 9px 0;
 }

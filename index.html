@@ -3,22 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <title>Discord</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- header section -->
     <header>
-        <nav>
-            <a href="#"><img src="img/logo.svg" alt=""></a>
-            <ul>
-                <li><a href="#">Scarica</a></li>
-                <li><a href="#">Perché Discord</a></li>
-                <li><a href="#">Nitro</a></li>
-                <li><a href="#">Sicurezza</a></li>
-                <li><a href="#">Assistenza</a></li>
-            </ul>
-            <button></button>
-        </nav>
+        <div class="container">
+            <!-- navigation links -->
+            <nav class="row">
+                <a href="#" class="col-1x">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <ul class="col-4x">
+                    <li><a href="#">Scarica</a></li>
+                    <li><a href="#">Perché Discord</a></li>
+                    <li><a href="#">Nitro</a></li>
+                    <li><a href="#">Sicurezza</a></li>
+                    <li><a href="#">Assistenza</a></li>
+                </ul>
+                <button class="btn btn-white btn-small col-1x">
+                    <a href="#">Accedi</a>
+                </button>
+            </nav>
+            <!-- text section inside the header -->
+            <section>
+                <h1>Il tuo posto per parlare</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, dolor repudiandae. Voluptatibus alias voluptas non amet. Voluptate, incidunt deserunt excepturi reprehenderit cumque perferendis esse vero ad veritatis aliquam consequatur error.</p>
+                <button class="btn btn-white">
+                    <a href="#">Scarica per Mac</a>
+                </button>
+                <button class="btn btn-black">
+                    <a href="#">Apri Discord nel tuo browser</a>
+                </button>
+            </section>
+        </div>
     </header>
-    <main></main>
+
+    <!-- main section -->
+    <main>
+        <!-- section 1 -->
+        <section>
+            <div class="container row">
+                <div class="col-4x">
+                    <img src="img/item1.svg" alt="img-1" >
+                </div>
+                <div class="col-2x">
+                    <h2>Un luogo a invito con tutto lo spazio necessario per parlare</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos iste aperiam molestiae. Aspernatur consectetur dolorem vero? Enim aliquam totam quod impedit quidem praesentium placeat voluptatibus ab consequatur cupiditate, voluptate cum!</p>
+                </div>
+            </div>
+        </section>
+        <!-- section 2 -->
+        <section>
+            <div class="container row">
+                <div class="col-4x float-right">
+                    <img src="img/item2.svg" alt="img-2" >
+                </div>
+                <div class="col-2x float-right">
+                    <h2>Dove trovarsi è facile</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos iste aperiam molestiae. Aspernatur consectetur dolorem vero?</p>
+                </div>
+            </div>
+        </section>
+        <!-- section 3 -->
+        <section>
+            <div class="container row">
+                <div class="col-4x">
+                    <img src="img/item3.svg" alt="img-3" >
+                </div>
+                <div class="col-2x">
+                    <h2>Da pochi a un fandom</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos iste aperiam molestiae. Aspernatur consectetur dolorem vero?</p>
+                </div>
+            </div>
+        </section>
+        <!-- section 4 -->
+        <section>
+            <div class="container section-4">
+                <div class="section-4-text">
+                    <h2>Tecnologia affidabile per tenersi in contatto</h2>
+                    <p>Video e audio a bassa latenza ti faranno sentire come se foste tutti nella stessa stanza. Fai ciao in video, guarda gli amici giocare in streaming, o riunitevi in una sessione di disegno con la condivisione schermo.</p>
+                </div>
+                <div class="section-4-img">
+                    <img src="img/item4-big.svg" alt="img-4">
+                </div>
+                <div class="section-4-bottom-text">
+                    <img src="img/stars.svg" alt="stars">
+                    <h3>Pronto a iniziare la tua avventura?</h3>
+                    <button class="btn btn-light-purple">
+                        <a href="#">
+                            <span>&#8595;</span>
+                            Scarica per Mac
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
     <footer></footer>
 </body>
 </html>
