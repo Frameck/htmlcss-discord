@@ -17,11 +17,11 @@ header {
     background-image: url(../img/jumbo.png);
     background-size: cover;
     color: white;
-    margin-bottom: 100px;
 }
 
 header nav {
     padding: 10px 0;
+    line-height: 33px;
 }
 
 header nav ul {
@@ -45,8 +45,14 @@ header section > .btn-white {
 .container {
     max-width: var(--content-size);
     width: 100%;
-    margin: 150px auto;
-    padding: 75px 0;
+    margin: auto;
+    padding: 150px 0;
+}
+
+header > .container {
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 50px;
 }
 
 a {
@@ -109,7 +115,6 @@ h2 {
 }
 
 .section-4 {
-    margin-bottom: 75px;
     position: relative;
 }
 
@@ -126,6 +131,51 @@ h2 {
     width: 50%;
 }
 
+footer .purple-text {
+    color: rgb(77, 75, 215);
+}
+
+footer {
+    background-color: rgb(41, 43, 48);
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+footer .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+footer .row .col-2x {
+    margin-top: 0;
+}
+
+#flag {
+    width: 20px;
+}
+
+h3 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+hr {
+    color: rgb(147, 160, 221);
+}
+
+.social-icons {
+    padding: 15px 0 0 0;
+    word-spacing: 15px;
+}
+
+.arrow {
+    font-size: 20px;
+    transform: rotate(90deg) scaleX(-1);
+}
 
 /***** utility classes *****/
 
@@ -183,4 +233,22 @@ h2 {
 .btn-small {
     font-size: 14px;
     padding: 9px 0;
+    width: 70px;
+    float: right;
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
+
+.text-white {
+    color: white;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(147, 160, 221);
 }
